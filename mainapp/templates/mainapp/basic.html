@@ -1,0 +1,10 @@
+{% extends "mainapp/wrapper.html" %} 
+{% load static %}
+{% block content %}
+<p>
+<img class="d-block mx-auto mb-4" src="{% static 'mainapp/image/2022-11-26_18-40-16.png' %}" alt="" width="464" height="204">
+</p>
+{% for val in values %}
+<p>{{val}}</p>
+{% endfor %}
+{% endblock %}

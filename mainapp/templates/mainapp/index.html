@@ -1,0 +1,17 @@
+{% extends "mainapp/wrapper.html" %} 
+{% load static %}
+{% block content %}
+from django.conf.urls.static import static
+
+<p>
+<img class="d-block mx-auto mb-4" src="{% static 'mainapp/image/2022-11-26_14-24-09.png' %}" alt="" width="514" height="206">
+<!--<img class="d-block mx-auto mb-4" src="../webexample/2022-11-26_14-24-09.png" alt="" width="514" height="206">-->
+
+</p>
+{% include "mainapp/includes/some_html.html"%}
+
+<p">Проверка работоспособности!</p>
+{% endblock %}
+{% block content2 %}
+{% include "mainapp/includes/some_html2.html"%}
+{% endblock %}

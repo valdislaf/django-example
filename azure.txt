@@ -1,0 +1,32 @@
+valdislaf [ ~ ]$ pip freeze> requirements.txt
+valdislaf [ ~ ]$ pip install -r requirements.txt
+
+git remote add azure https://djangoexample3.scm.azurewebsites.net:443/djangoexample3.git
+git push azure main:master
+your login
+your password
+
+git remote add django-example https://github.com/valdislaf/django-example.git
+git push django-example main:master
+your login
+your password
+
+You may need to add 'djangoexample3.azurewebsites.net' to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
+ADDs:
+settings.py
+STATIC_ROOT = '/home/site/wwwroot/mainapp/static/'
+STATIC_URL = '/static/'
+
+mainapp/urls.py
+from django.conf import settings
+from django.conf.urls.static import static
+urlpatterns = []+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+remote: PreDeployment: context.OutputPath /home/site/wwwroot
+178 static files copied to '/home/site/wwwroot/mainapp/static'
+
+
+git clone https://github.com/valdislaf/django-example.git
+git push
