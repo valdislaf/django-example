@@ -1,7 +1,8 @@
 ##initial project:
-django-admin startproject djangoexample
+django-admin startproject mysite
 python manage.py runserver
-##Django version 4.1.1, using settings 'djangoexample.settings'
+
 ##Starting development server at http://127.0.0.1:8000/
 ##add new app:
+python manage.py startapp webexample
 python manage.py startapp mainapp
