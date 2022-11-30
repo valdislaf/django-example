@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-uqfa1yqu#d(p@8o+!lbsu5_^%%@t40%m05ru*22059u$v@$b#)
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
-
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
 
 # Application definition
 
