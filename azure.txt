@@ -21,7 +21,7 @@ git push -u origin main
 
 You may need to add 'djangoexample3.azurewebsites.net' to ALLOWED_HOSTS
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
-CSRF_TRUSTED_ORIGINS = ['djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net', 'https://djangoexample3.azurewebsites.net']
 
 ADDs:
 settings.py
