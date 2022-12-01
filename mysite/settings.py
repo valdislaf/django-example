@@ -32,14 +32,14 @@ SECRET_KEY = 'django-insecure-uqfa1yqu#d(p@8o+!lbsu5_^%%@t40%m05ru*22059u$v@$b#)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
-CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net', 'https://djangoexample3.azurewebsites.net']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net']
 
 # Application definition
 
 INSTALLED_APPS = [
     'mainapp',
-    'webexample',
+    'news',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -112,9 +112,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+#LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
+#TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 

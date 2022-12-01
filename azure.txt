@@ -1,7 +1,7 @@
 valdislaf [ ~ ]$ pip freeze> requirements.txt
 valdislaf [ ~ ]$ pip install -r requirements.txt
 
-git remote add azure https://djangoexample3.scm.azurewebsites.net:443/djangoexample3.git
+git remote add azure https://djangoexample2.scm.azurewebsites.net:443/djangoexample2.git
 git push azure main:master
 your login
 your password
@@ -19,9 +19,9 @@ git remote -v
 git branch -M main
 git push -u origin main
 
-You may need to add 'djangoexample3.azurewebsites.net' to ALLOWED_HOSTS
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
-CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net', 'https://djangoexample3.azurewebsites.net']
+You may need to add 'djangoexample2.azurewebsites.net' to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net']
 
 ADDs:
 settings.py

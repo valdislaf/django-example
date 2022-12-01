@@ -1,8 +1,18 @@
 ##initial project:
-django-admin startproject mysite
+django-admin startproject djangoexample
 python manage.py runserver
-
+##Django version 4.1.1, using settings 'djangoexample.settings'
 ##Starting development server at http://127.0.0.1:8000/
 ##add new app:
-python manage.py startapp webexample
 python manage.py startapp mainapp
+python manage.py startapp news
+clear
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+#SuperUser:
+winpty python manage.py createsuperuser
+admin
+your@xx.xx
+*****************
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net']
