@@ -15,4 +15,5 @@ winpty python manage.py createsuperuser
 admin
 your@xx.xx
 *****************
-CSRF_TRUSTED_ORIGINS = ['https://djangoexample2.azurewebsites.net']
+ALLOWED_HOSTS = ['djangoexample.ru', 'www.djangoexample.ru', '127.0.0.1', 'localhost', 'djangoexample2.azurewebsites.net', 'djangoexample3.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://djangoexample.ru', 'https://www.djangoexample.ru', 'https://djangoexample2.azurewebsites.net', 'https://djangoexample3.azurewebsites.net']
